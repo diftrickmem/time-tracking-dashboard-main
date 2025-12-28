@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script defer src="./Scripts/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="profile-card">
+        <div class="profile-card__info">
+          <img
+            src="./images/image-jeremy.png"
+            alt="Jeremy Robson"
+            class="profile-card__image"
+          />
+          <div class="profile-card__text">
+            <p class="profile-card__report">Report for</p>
+            <h1 class="profile-card__name">Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="profile-card__time-sel">
+          <p id="daily" class="profile-card__btn">Daily</p>
+          <p id="weekly" class="profile-card__btn">Weekly</p>
+          <p id="monthly" class="profile-card__btn">Monthly</p>
+        </div>
+      </section>
+
+      <section class="time-card work-card" data-title="Work">
+        <div class="time-card__content">
+          <div class="time-card__header">
+            <p>Work</p>
+            <span
+              ><img
+                class="time-card__image"
+                src="./images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+            /></span>
+          </div>
+          <div class="time-card__hours">
+            <p class="time-card__hours--current">--hrs</p>
+            <p class="time-card__hours--previous">Previous - --hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="time-card play-card" data-title="Play">
+        <div class="time-card__content">
+          <div class="time-card__header">
+            <p>Play</p>
+            <span
+              ><img
+                class="time-card__image"
+                src="./images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+            /></span>
+          </div>
+          <div class="time-card__hours">
+            <p class="time-card__hours--current">--hrs</p>
+            <p class="time-card__hours--previous">Previous --hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="time-card study-card" data-title="Study">
+        <div class="time-card__content">
+          <div class="time-card__header">
+            <p>Study</p>
+            <span
+              ><img
+                class="time-card__image"
+                src="./images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+            /></span>
+          </div>
+          <div class="time-card__hours">
+            <p class="time-card__hours--current">--hrs</p>
+            <p class="time-card__hours--previous">Previous - --hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="time-card exercise-card" data-title="Exercise">
+        <div class="time-card__content">
+          <div class="time-card__header">
+            <p>Exercise</p>
+            <span
+              ><img
+                class="time-card__image"
+                src="./images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+            /></span>
+          </div>
+          <div class="time-card__hours">
+            <p class="time-card__hours--current">--hrs</p>
+            <p class="time-card__hours--previous">Previous - --hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="time-card social-card" data-title="Social">
+        <div class="time-card__content">
+          <div class="time-card__header">
+            <p>Social</p>
+            <span
+              ><img
+                class="time-card__image"
+                src="./images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+            /></span>
+          </div>
+          <div class="time-card__hours">
+            <p class="time-card__hours--current">--hrs</p>
+            <p class="time-card__hours--previous">Previous - --hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="time-card selfCare-card" data-title="Self Care">
+        <div class="time-card__content">
+          <div class="time-card__header">
+            <p>Self Care</p>
+            <span
+              ><img
+                class="time-card__image"
+                src="./images/icon-ellipsis.svg"
+                alt="icon-ellipsis"
+            /></span>
+          </div>
+          <div class="time-card__hours">
+            <p class="time-card__hours--current">--hrs</p>
+            <p class="time-card__hours--previous">Previous - --hrs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/diftrickmem" target="_blank">diftrickmem</a>.
+    </div>
+  </body>
+</html>

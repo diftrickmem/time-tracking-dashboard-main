@@ -1,0 +1,219 @@
+.rubik {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(226, 43%, 10%);
+    color: hsl(236, 100%, 87%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    width: 90vw;
+    min-width: 20em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding: 5vw;
+}
+
+a{
+    color: hsl(236, 100%, 95%);
+    text-decoration: none;
+}
+
+.profile-card {
+    width: 100%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 1em;
+}
+
+.profile-card__info {
+    display: flex;
+    flex-direction: row;
+    border-radius: 1em;
+    background-color: hsl(246, 80%, 60%);
+    padding: 2em;
+}
+
+.profile-card__text {
+    margin-left: 1em;
+}
+
+.profile-card__image {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1em;
+}
+
+.profile-card__report {
+    color: hsl(236, 100%, 87%);
+    opacity: 0.7;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+.profile-card__name {
+    font-size: 1.5em;
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+.profile-card__time-sel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 2em;
+}
+
+.profile-card__btn {
+    cursor: pointer;
+}
+
+
+.time-card {
+    width: 100%;
+    min-width: 10em;
+    background-color: #fff;
+    border-radius: 1em 1em 1.5em 1.5em;
+    padding-top: 2.5em;
+    margin: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: top -0.5em right 1em;
+}
+/* Time Card Styles */
+.work-card {
+
+    background-image: url(../images/icon-work.svg);
+    background-color: hsl(15, 100%, 70%);
+}
+
+.play-card {
+    background-image: url(../images/icon-play.svg);
+    background-color: hsl(195, 74%, 62%);
+}
+
+.study-card {
+    background-image: url(../images/icon-study.svg);
+    background-color: hsl(348, 100%, 68%);
+}
+
+.exercise-card {
+    background-image: url(../images/icon-exercise.svg);
+    background-color: hsl(145, 58%, 55%);
+}
+
+.social-card {
+    background-image: url(../images/icon-social.svg);
+    background-color: hsl(264, 64%, 52%);
+}
+
+.selfCare-card {
+    background-image: url(../images/icon-self-care.svg);
+    background-color: hsl(43, 84%, 65%);
+}
+/* Time Card Styles END */
+
+.time-card__content {
+    width: 100%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 0 0 1em 1em;
+    padding: 1.5em;
+}
+
+.time-card__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.time-card__hours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-card__hours--current {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: 0.5em 0;
+    color: #fff;
+}
+
+@media (min-width: 48em)
+{
+    main {
+        width: auto;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 'block1 block2 block3 block4' 'block1 block5 block6 block7';
+        max-height: fit-content;
+        padding: 5vw;
+    }
+
+    .profile-card {
+        grid-area: block1;
+        height: auto;    
+    }
+
+    .profile-card__info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .profile-card__text{
+        margin: 0;
+    }
+
+    .profile-card__name{
+        font-size: 2.5em;
+    }
+
+    .profile-card__time-sel{
+        flex-direction: column;
+    }
+
+    .time-card__hours{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .time-card__hours--previous{
+        font-size: 0.8em;
+    }
+}
+
+.active{
+    color: #fff;
+}
+
+.hidden{
+    display: none;
+}
