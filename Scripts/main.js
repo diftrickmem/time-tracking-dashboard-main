@@ -44,3 +44,4 @@ buttons.forEach(btn => {
 
 // Запускаємо при старті
 updateDashboard('weekly');
+buttons[1].classList.add('active'); // За замовчуванням активуємо "Weekly"
